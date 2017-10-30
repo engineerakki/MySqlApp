@@ -1,0 +1,11 @@
+﻿
+@model DBApp.Models.DataBag
+@{
+    var myChart = new Chart(width: 600, height: 400)
+        .AddTitle("2017 Trend")
+        .AddSeries(
+            name: "Monthly Interest",
+            xValue: @Model.Interest, xField: "MonthName",
+            yValues: @Model.Interest, yFields: "Interest")
+        .Write();
+}

@@ -1,0 +1,41 @@
+﻿
+@model DBApp.Models.DataBag
+@{
+    ViewBag.Title = "Home Page";
+}
+
+
+<div class="jumbotron">
+    <h1>@ViewBag.Header</h1>
+    <div class="row">
+        <div class="col-md-4">
+            <p class="lead">See how much you can save</p>
+            <div style="margin-top:15px">
+                @using (Html.BeginForm("WhatIf", "Home", FormMethod.Post))
+            {
+                    <table border="0" cellpadding="3" cellspacing="1" width="100%">
+                        <tr valign="top">
+                            <td>
+                                Current Balance
+                                @Html.TextBoxFor(model => model.Account.Balance, new { Class = "bankinputclass" })
+                            </td>
+                        </tr>
+                        <tr valign="top">
+                            <td>
+                                Monthly Deposit
+                                @Html.TextBoxFor(model => model.Account.Deposit, new { Class = "bankinputclass" })
+                            </td>
+                        </tr>
+                    </table>
+                    <div style="text-align:left;">
+                        <input class="btn btn-default" type="submit" id="btnRun" value="Run" />
+                    </div>
+                }
+            </div>
+        </div>
+        <div class="col-md-8">
+            <p><img src="@Url.Action("InterestChart")" /> </p>
+            <p align="right">Annual Interest Forecast</p>
+        </div>
+    </div>
+</div>

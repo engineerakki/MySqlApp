@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.15
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DBApp", "DBApp\DBApp.csproj", "{4C129380-DA69-485B-AFAC-7F0E9C404009}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BizLib", "BizLib\BizLib.csproj", "{771789BF-E605-418E-B418-62FA2F0C7DE6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataObjects", "DataObjects\DataObjects.csproj", "{248D3BB3-1993-4C83-82C1-6621CE1FAC9B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4C129380-DA69-485B-AFAC-7F0E9C404009}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C129380-DA69-485B-AFAC-7F0E9C404009}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C129380-DA69-485B-AFAC-7F0E9C404009}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C129380-DA69-485B-AFAC-7F0E9C404009}.Release|Any CPU.Build.0 = Release|Any CPU
+		{771789BF-E605-418E-B418-62FA2F0C7DE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{771789BF-E605-418E-B418-62FA2F0C7DE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{771789BF-E605-418E-B418-62FA2F0C7DE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{771789BF-E605-418E-B418-62FA2F0C7DE6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{248D3BB3-1993-4C83-82C1-6621CE1FAC9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{248D3BB3-1993-4C83-82C1-6621CE1FAC9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{248D3BB3-1993-4C83-82C1-6621CE1FAC9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{248D3BB3-1993-4C83-82C1-6621CE1FAC9B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

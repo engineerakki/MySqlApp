@@ -1,0 +1,11 @@
+﻿
+@model DBApp.Models.DataBag
+@{
+    var myChart = new Chart(width: 600, height: 300)
+        .AddTitle("What to expect")
+        .AddSeries(
+            name: "Monthly Interest",
+            xValue: @Model.WhatIfResults.Months, xField: "MonthName",
+            yValues: @Model.WhatIfResults.Months, yFields: "Interest")
+        .Write();
+}

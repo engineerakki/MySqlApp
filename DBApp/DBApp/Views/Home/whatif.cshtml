@@ -1,0 +1,28 @@
+﻿
+@model DBApp.Models.DataBag
+
+@{
+    ViewBag.Title = "Results";
+}
+
+
+<div class="row">
+    <h2>Results</h2>
+    <div class="col-md-4">
+        <p>
+            New Balance: <b>@Model.WhatIfResults.NewBalance</b>
+        </p>
+        <p>
+            Deposit: <b>@Model.WhatIfResults.Deposit</b>
+        </p>
+        <p>
+            Original balance: <b>@Model.WhatIfResults.Balance</b>
+        </p>
+       
+    </div>
+    <div class="col-md-8">
+        <h4>Monthly Interest</h4>
+        <p><img src="@Url.Action("WhatIfResults")" /> </p>
+    </div>
+</div>
+<p><a href="/" class="btn btn-primary btn-lg">Back &raquo;</a></p>
