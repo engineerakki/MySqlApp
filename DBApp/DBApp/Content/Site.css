@@ -26,3 +26,12 @@ textarea {
     text-align: right;
     max-width: 280px;
 }
+
+.spaced {
+    margin: 30px;
+}
+
+.loud {
+    font-weight: 500;
+    line-height: 1.1;
+}

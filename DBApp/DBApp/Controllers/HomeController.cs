@@ -12,7 +12,7 @@ namespace DBApp.Controllers
         public ActionResult Index()
         {
             log.Info($"Loading index page");
-            ViewBag.Header = "Account Analisys";
+            ViewBag.Header = "Account Growth";
             BizLib.DB db = new BizLib.DB();
             DataBag bag = new DataBag();
             try
